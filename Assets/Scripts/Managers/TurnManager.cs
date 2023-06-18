@@ -10,17 +10,26 @@ private void Awake()
 {
     instance=this;
 }
+private void Start(){
+    StartTurnGameplay(0);
+}
 public void StartTurnGameplay(int playerID)
 {
     currentPlayerTurn=playerID;
-    PlayerManager.instance.AssignTurn(currentPlayerTurn);
+    StartTurn();
 }
 public void StartTurn()
 {
+GameplayUIController.instance.UpdateCurrentPlayerTurn(currentPlayerTurn);
+    PlayerManager.instance.AssignTurn(currentPlayerTurn);
+    CardManager.instance.ProcessStartTurn(currentPlayerTurn);
+
 
 }
 public void EndTurn()
 {
-
+CardManager.instance.ProcessEndTurn(currentPlayerTurn);
+currentPlayerTurn = currentPlayerTurn == 0 ? 1 : 0;
+StartTurn();
 }
 }
