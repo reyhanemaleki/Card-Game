@@ -8,6 +8,9 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
     public TextMeshProUGUI player0Health, player1Health, player0Mana, player1Mana;
     public GameEndUIController gameEndUI;
+
+
+
 public void Awake()
 {
     instance=this;

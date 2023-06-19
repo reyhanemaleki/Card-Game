@@ -344,9 +344,14 @@ MonoBehaviour:
     manaCost: 1
     ownerID: 0
     illustration: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  player1Deck: 0000000000000000000000000100000002000000
   player1Hand: {fileID: 573884694}
   player2Hand: {fileID: 49902352}
   CardControllerPrefab: {fileID: 8092532654739188483, guid: 5908064cda9d06144b31577ed6fe1f57, type: 3}
+  player1Cards: []
+  player2Cards: []
+  player1HandCards: []
+  player2HandCards: []
 --- !u!114 &246870112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,7 +417,7 @@ MonoBehaviour:
   player1Health: {fileID: 1343669692}
   player0Mana: {fileID: 1566347809}
   player1Mana: {fileID: 1551595374}
-  gameEndUI: {fileID: 0}
+  gameEndUI: {fileID: 580888471}
 --- !u!1 &373628785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,8 +1096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winnerName: {fileID: 485441897}
-  restart: {fileID: 0}
-  quit: {fileID: 0}
+  restart: {fileID: 1592664379}
+  quit: {fileID: 1041253137}
 --- !u!222 &580888472
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1720,7 +1725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -897.37, y: 388}
+  m_AnchoredPosition: {x: -897.37, y: 480}
   m_SizeDelta: {x: 125, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343669692

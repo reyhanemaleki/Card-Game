@@ -38,6 +38,8 @@ public void DamagePlayer(int ID, int damage)
         PlayerLost(ID);
     }
 }
+
+
 private void PlayerLost(int ID)
 {
 UIManager.instance.GameFinished(ID == 0 ? FindPlayerByID(1) : FindPlayerByID(0));
@@ -49,6 +51,7 @@ public Player FindPlayerByID(int ID)
     Player foundPlayer = null;
     foreach(Player player in players)
     {
+
         if(player.ID == ID)
         foundPlayer = player;
     }
